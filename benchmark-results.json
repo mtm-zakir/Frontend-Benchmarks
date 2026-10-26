@@ -19,143 +19,144 @@
   },
   "results": {
     "vanilla": {
-      "Model & Runtime Init": 11,
-      "First Token Latency (TTFT)": 2.6,
-      "Token Streaming & Render (TPS)": 6,
-      "Tool-Calling Execution": 7.2,
-      "Render Large Conversation": 7.4,
-      "Agent State Updates": 5.8,
-      "IndexedDB Storage I/O": 9.2,
-      "UI Response Under Inference": 6.4,
-      "Cancellation & Teardown": 5.1,
-      "Clear Session & Cleanup": 13
+      "Model & Runtime Init": 12.8,
+      "First Token Latency (TTFT)": 2.4,
+      "Token Streaming & Render (TPS)": 10.7,
+      "Tool-Calling Execution": 5.8,
+      "Render Large Conversation": 7.5,
+      "Agent State Updates": 13.7,
+      "IndexedDB Storage I/O": 11.8,
+      "UI Response Under Inference": 6.2,
+      "Cancellation & Teardown": 6,
+      "Clear Session & Cleanup": 14.6
     },
     "solid": {
-      "Model & Runtime Init": 10,
+      "Model & Runtime Init": 13,
       "First Token Latency (TTFT)": 0.7,
-      "Token Streaming & Render (TPS)": 0.7,
+      "Token Streaming & Render (TPS)": 0.5,
       "Tool-Calling Execution": 0.6,
-      "Render Large Conversation": 2.3,
+      "Render Large Conversation": 1.7,
       "Agent State Updates": 0.2,
-      "IndexedDB Storage I/O": 4.5,
-      "UI Response Under Inference": 0.3,
+      "IndexedDB Storage I/O": 6.3,
+      "UI Response Under Inference": 0.2,
       "Cancellation & Teardown": 0.4,
-      "Clear Session & Cleanup": 1.5
+      "Clear Session & Cleanup": 1
     },
     "inferno": {
-      "Model & Runtime Init": 11.6,
-      "First Token Latency (TTFT)": 0.5,
-      "Token Streaming & Render (TPS)": 0.4,
-      "Tool-Calling Execution": 0.6,
-      "Render Large Conversation": 2.3,
-      "Agent State Updates": 0.6,
-      "IndexedDB Storage I/O": 5,
-      "UI Response Under Inference": 0.8,
-      "Cancellation & Teardown": 0.6,
-      "Clear Session & Cleanup": 1.1
+      "Model & Runtime Init": 23.5,
+      "First Token Latency (TTFT)": 0.4,
+      "Token Streaming & Render (TPS)": 0.5,
+      "Tool-Calling Execution": 0.7,
+      "Render Large Conversation": 2,
+      "Agent State Updates": 0.8,
+      "IndexedDB Storage I/O": 5.6,
+      "UI Response Under Inference": 0.6,
+      "Cancellation & Teardown": 0.4,
+      "Clear Session & Cleanup": 1.9
     },
     "preact": {
-      "Model & Runtime Init": 12.7,
-      "First Token Latency (TTFT)": 2.3,
-      "Token Streaming & Render (TPS)": 9.4,
-      "Tool-Calling Execution": 5.6,
-      "Render Large Conversation": 12.8,
-      "Agent State Updates": 1.6,
-      "IndexedDB Storage I/O": 8,
-      "UI Response Under Inference": 2.1,
-      "Cancellation & Teardown": 2.4,
-      "Clear Session & Cleanup": 12.8
+      "Model & Runtime Init": 22.8,
+      "First Token Latency (TTFT)": 3,
+      "Token Streaming & Render (TPS)": 10.9,
+      "Tool-Calling Execution": 5.4,
+      "Render Large Conversation": 15.9,
+      "Agent State Updates": 1.4,
+      "IndexedDB Storage I/O": 7.7,
+      "UI Response Under Inference": 1.5,
+      "Cancellation & Teardown": 2.1,
+      "Clear Session & Cleanup": 19.5
     },
     "mithril": {
-      "Model & Runtime Init": 10.3,
-      "First Token Latency (TTFT)": 0.2,
+      "Model & Runtime Init": 14.9,
+      "First Token Latency (TTFT)": 0.1,
       "Token Streaming & Render (TPS)": 0.1,
-      "Tool-Calling Execution": 0.1,
-      "Render Large Conversation": 0.3,
+      "Tool-Calling Execution": 0.2,
+      "Render Large Conversation": 0.2,
       "Agent State Updates": 0.2,
       "IndexedDB Storage I/O": 4.8,
-      "UI Response Under Inference": 0.2,
-      "Cancellation & Teardown": 0.3
+      "UI Response Under Inference": 0.1,
+      "Cancellation & Teardown": 0.2,
+      "Clear Session & Cleanup": 0.1
     },
     "lit": {
-      "Model & Runtime Init": 10.1,
+      "Model & Runtime Init": 11,
       "First Token Latency (TTFT)": 0.8,
-      "Token Streaming & Render (TPS)": 0.8,
-      "Tool-Calling Execution": 0.7,
-      "Render Large Conversation": 2.1,
-      "Agent State Updates": 0.8,
-      "IndexedDB Storage I/O": 4.7,
-      "UI Response Under Inference": 0.5,
-      "Cancellation & Teardown": 0.7,
-      "Clear Session & Cleanup": 1.7
+      "Token Streaming & Render (TPS)": 0.6,
+      "Tool-Calling Execution": 0.8,
+      "Render Large Conversation": 1.8,
+      "Agent State Updates": 0.4,
+      "IndexedDB Storage I/O": 4.9,
+      "UI Response Under Inference": 0.6,
+      "Cancellation & Teardown": 0.5,
+      "Clear Session & Cleanup": 0.9
     },
     "svelte": {
-      "Model & Runtime Init": 11.1,
-      "First Token Latency (TTFT)": 0.8,
-      "Token Streaming & Render (TPS)": 0.8,
-      "Tool-Calling Execution": 0.7,
-      "Render Large Conversation": 3.7,
-      "Agent State Updates": 0.7,
-      "IndexedDB Storage I/O": 4.2,
-      "UI Response Under Inference": 0.5,
-      "Cancellation & Teardown": 0.9,
-      "Clear Session & Cleanup": 2.3
+      "Model & Runtime Init": 24.9,
+      "First Token Latency (TTFT)": 2.7,
+      "Token Streaming & Render (TPS)": 1.8,
+      "Tool-Calling Execution": 0.6,
+      "Render Large Conversation": 4,
+      "Agent State Updates": 0.5,
+      "IndexedDB Storage I/O": 5.3,
+      "UI Response Under Inference": 0.7,
+      "Cancellation & Teardown": 0.6,
+      "Clear Session & Cleanup": 1.8
     },
     "vue": {
-      "Model & Runtime Init": 10.5,
+      "Model & Runtime Init": 9.7,
       "First Token Latency (TTFT)": 0.3,
       "Token Streaming & Render (TPS)": 0.4,
-      "Tool-Calling Execution": 0.3,
+      "Tool-Calling Execution": 0.2,
       "Render Large Conversation": 0.4,
-      "Agent State Updates": 0.3,
-      "IndexedDB Storage I/O": 4.8,
+      "Agent State Updates": 0.2,
+      "IndexedDB Storage I/O": 4.3,
       "UI Response Under Inference": 0.3,
-      "Cancellation & Teardown": 0.3,
+      "Cancellation & Teardown": 0.2,
       "Clear Session & Cleanup": 0.2
     },
     "react": {
-      "Model & Runtime Init": 13,
+      "Model & Runtime Init": 15.5,
       "First Token Latency (TTFT)": 2.1,
-      "Token Streaming & Render (TPS)": 6.9,
-      "Tool-Calling Execution": 5.5,
-      "Render Large Conversation": 12.8,
-      "Agent State Updates": 6.2,
-      "IndexedDB Storage I/O": 9.1,
-      "UI Response Under Inference": 5.7,
-      "Cancellation & Teardown": 4.8,
-      "Clear Session & Cleanup": 13.5
+      "Token Streaming & Render (TPS)": 21.8,
+      "Tool-Calling Execution": 6.5,
+      "Render Large Conversation": 13.1,
+      "Agent State Updates": 6.8,
+      "IndexedDB Storage I/O": 11.1,
+      "UI Response Under Inference": 5.9,
+      "Cancellation & Teardown": 6.3,
+      "Clear Session & Cleanup": 21.6
     },
     "angular": {
-      "Model & Runtime Init": 11.1,
-      "First Token Latency (TTFT)": 1.2,
-      "Token Streaming & Render (TPS)": 1.3,
-      "Tool-Calling Execution": 1.5,
-      "Render Large Conversation": 5.8,
-      "Agent State Updates": 1.2,
-      "IndexedDB Storage I/O": 4,
-      "UI Response Under Inference": 0.6,
-      "Cancellation & Teardown": 1.4,
-      "Clear Session & Cleanup": 1.5
+      "Model & Runtime Init": 33.9,
+      "First Token Latency (TTFT)": 1.5,
+      "Token Streaming & Render (TPS)": 5.2,
+      "Tool-Calling Execution": 1.6,
+      "Render Large Conversation": 8.3,
+      "Agent State Updates": 0.9,
+      "IndexedDB Storage I/O": 5.6,
+      "UI Response Under Inference": 6.5,
+      "Cancellation & Teardown": 1.1,
+      "Clear Session & Cleanup": 8.3
     },
     "qwik": {
-      "Model & Runtime Init": 11.8,
-      "First Token Latency (TTFT)": 1.4,
-      "Token Streaming & Render (TPS)": 1.3,
-      "Tool-Calling Execution": 0.6,
-      "Render Large Conversation": 6.6,
-      "Agent State Updates": 6.4,
-      "IndexedDB Storage I/O": 5.6,
-      "UI Response Under Inference": 1.8,
-      "Cancellation & Teardown": 1.3,
-      "Clear Session & Cleanup": 7.2
+      "Model & Runtime Init": 14.7,
+      "First Token Latency (TTFT)": 1,
+      "Token Streaming & Render (TPS)": 0.6,
+      "Tool-Calling Execution": 0.9,
+      "Render Large Conversation": 7.2,
+      "Agent State Updates": 5.9,
+      "IndexedDB Storage I/O": 5.3,
+      "UI Response Under Inference": 2,
+      "Cancellation & Teardown": 1.1,
+      "Clear Session & Cleanup": 6.1
     }
   },
   "metrics": {
     "vanilla": {
-      "startupMs": 63.2,
+      "startupMs": 96.4,
       "initialMemoryMB": 1.36,
-      "peakMemoryMB": 2.63,
-      "retainedMemoryMB": 2.31,
+      "peakMemoryMB": 2.76,
+      "retainedMemoryMB": 2.74,
       "bundle": {
         "jsKb": 17.39,
         "gzipKb": 7.12,
@@ -164,10 +165,10 @@
       }
     },
     "solid": {
-      "startupMs": 28.9,
+      "startupMs": 50.2,
       "initialMemoryMB": 1.48,
-      "peakMemoryMB": 2.68,
-      "retainedMemoryMB": 2.62,
+      "peakMemoryMB": 2.85,
+      "retainedMemoryMB": 3.1,
       "bundle": {
         "jsKb": 26.4,
         "gzipKb": 10.97,
@@ -176,10 +177,10 @@
       }
     },
     "preact": {
-      "startupMs": 27.2,
+      "startupMs": 41.6,
       "initialMemoryMB": 1.52,
-      "peakMemoryMB": 2.92,
-      "retainedMemoryMB": 2.92,
+      "peakMemoryMB": 2.85,
+      "retainedMemoryMB": 3.46,
       "bundle": {
         "jsKb": 29.96,
         "gzipKb": 12.42,
@@ -188,10 +189,10 @@
       }
     },
     "inferno": {
-      "startupMs": 42.8,
+      "startupMs": 44.4,
       "initialMemoryMB": 1.51,
-      "peakMemoryMB": 2.86,
-      "retainedMemoryMB": 3.39,
+      "peakMemoryMB": 3.03,
+      "retainedMemoryMB": 3.55,
       "bundle": {
         "jsKb": 42.02,
         "gzipKb": 15.66,
@@ -200,22 +201,22 @@
       }
     },
     "mithril": {
-      "startupMs": 31,
+      "startupMs": 43.5,
       "initialMemoryMB": 1.54,
-      "peakMemoryMB": 2.99,
-      "retainedMemoryMB": 2.99,
+      "peakMemoryMB": 3.02,
+      "retainedMemoryMB": 3.55,
       "bundle": {
         "jsKb": 41.73,
-        "gzipKb": 16.72,
+        "gzipKb": 16.73,
         "cssKb": 4.92,
         "wasmKb": 53880.67
       }
     },
     "lit": {
-      "startupMs": 31.3,
+      "startupMs": 34.9,
       "initialMemoryMB": 1.58,
-      "peakMemoryMB": 2.91,
-      "retainedMemoryMB": 2.66,
+      "peakMemoryMB": 2.74,
+      "retainedMemoryMB": 2.74,
       "bundle": {
         "jsKb": 35.91,
         "gzipKb": 13.44,
@@ -224,10 +225,10 @@
       }
     },
     "vue": {
-      "startupMs": 37.3,
+      "startupMs": 45.9,
       "initialMemoryMB": 1.78,
-      "peakMemoryMB": 3.4,
-      "retainedMemoryMB": 3.03,
+      "peakMemoryMB": 3.58,
+      "retainedMemoryMB": 3.55,
       "bundle": {
         "jsKb": 75.53,
         "gzipKb": 29.97,
@@ -236,22 +237,22 @@
       }
     },
     "svelte": {
-      "startupMs": 33.4,
-      "initialMemoryMB": 1.42,
-      "peakMemoryMB": 3.48,
-      "retainedMemoryMB": 3.48,
+      "startupMs": 118.4,
+      "initialMemoryMB": 1.91,
+      "peakMemoryMB": 3.35,
+      "retainedMemoryMB": 3.96,
       "bundle": {
-        "jsKb": 90.55,
+        "jsKb": 90.56,
         "gzipKb": 36.5,
         "cssKb": 4.92,
         "wasmKb": 53880.67
       }
     },
     "qwik": {
-      "startupMs": 28,
-      "initialMemoryMB": 1.37,
-      "peakMemoryMB": 3.87,
-      "retainedMemoryMB": 3.87,
+      "startupMs": 46,
+      "initialMemoryMB": 1.33,
+      "peakMemoryMB": 3.62,
+      "retainedMemoryMB": 4.33,
       "bundle": {
         "jsKb": 99.46,
         "gzipKb": 44.67,
@@ -260,10 +261,10 @@
       }
     },
     "react": {
-      "startupMs": 122.9,
+      "startupMs": 233.4,
       "initialMemoryMB": 2.16,
-      "peakMemoryMB": 3.85,
-      "retainedMemoryMB": 4.47,
+      "peakMemoryMB": 3.92,
+      "retainedMemoryMB": 4.54,
       "bundle": {
         "jsKb": 202.73,
         "gzipKb": 65.06,
@@ -272,10 +273,10 @@
       }
     },
     "angular": {
-      "startupMs": 42.7,
+      "startupMs": 108.3,
       "initialMemoryMB": 2.85,
-      "peakMemoryMB": 4.68,
-      "retainedMemoryMB": 4.68,
+      "peakMemoryMB": 4.67,
+      "retainedMemoryMB": 4.67,
       "bundle": {
         "jsKb": 1197.66,
         "gzipKb": 351.43,

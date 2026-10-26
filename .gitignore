@@ -1,0 +1,15 @@
+# Dependencies
+**/node_modules/
+
+# Build output
+**/dist/
+
+angular/.angular/
+svelte/.svelte-kit/
+qwik/tmp/
+
+# MacOS
+.DS_Store
+
+# Results
+benchmark-results.md

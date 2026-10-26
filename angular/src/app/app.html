@@ -1,0 +1,103 @@
+<div class="agent-app">
+  <div class="agent-header">
+    <div class="header-title-wrap">
+      <h1>{{ CONFIG.UI_TEXT.TITLE }}</h1>
+      <p>{{ CONFIG.UI_TEXT.SUBTITLE }}</p>
+    </div>
+    <div class="specs-bar">
+      <span class="spec-chip">OS: <strong>{{ SYSTEM_SPECS.os }}</strong></span>
+      <span class="spec-chip">CPU: <strong>{{ SYSTEM_SPECS.cpu }}</strong></span>
+      <span class="spec-chip">NPU: <strong>{{ SYSTEM_SPECS.npu }}</strong></span>
+      <span class="spec-chip">Cores: <strong>{{ SYSTEM_SPECS.cores }}</strong></span>
+      <span class="spec-chip">RAM: <strong>{{ SYSTEM_SPECS.ram }}</strong></span>
+      <span class="spec-chip">Engine: <strong>{{ SYSTEM_SPECS.engine }}</strong></span>
+    </div>
+    <div class="badge-row">
+      <span class="chip chip-fw">Angular 19</span>
+      <span class="chip">{{ CONFIG.MODEL_NAME }}</span>
+      <span [class]="'chip ' + (isRunning() ? 'chip-running' : 'chip-status')">
+        {{ isRunning() ? 'Running Benchmark... (' + step() + '/10)' : 'Ready / Idle' }}
+      </span>
+      <span class="chip">Tokens: {{ agentState().tokensGenerated }}</span>
+    </div>
+  </div>
+
+  @if (step() === 11 && results().length > 0) {
+    <div class="results-container">
+      <h2>Benchmark Results</h2>
+      <table border="1" class="benchmark-table">
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>Duration (ms)</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (res of results(); track $index) {
+            <tr>
+              <td>{{ res.action }}</td>
+              <td><strong>{{ res.duration.toFixed(2) }}</strong></td>
+            </tr>
+          }
+          <tr class="total-row">
+            <td><strong>Total Time</strong></td>
+            <td><strong>{{ totalTime().toFixed(2) }}</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  }
+
+  <div class="chat-workspace">
+    <div class="chat-thread">
+      @if (messages().length === 0) {
+        <p style="color: var(--text-muted); text-align: center; padding: 40px">
+          {{ CONFIG.UI_TEXT.EMPTY_CHAT }}
+        </p>
+      } @else {
+        @for (m of messages(); track m.id) {
+          <div
+            [class]="'chat-bubble ' + (m.role === 'user' ? 'bubble-user' : m.role === 'system' ? 'bubble-system' : 'bubble-assistant')"
+          >
+            <div class="bubble-header">
+              <span>{{ m.role === 'user' ? 'User' : m.role === 'system' ? 'System Core' : 'AI Assistant' }}</span>
+              <span>{{ m.timestamp || '' }}</span>
+            </div>
+
+            @if (m.thinking) {
+              <div class="agent-thinking">
+                <div class="thinking-label">Reasoning Process</div>
+                {{ m.thinking }}
+              </div>
+            }
+
+            @if (m.toolCall) {
+              <div class="tool-call">
+                <span class="tool-badge">Tool: {{ m.toolCall.name }}</span>
+                <div><code>Args: {{ m.toolCall.args }}</code></div>
+                @if (m.toolCall.result) {
+                  <div class="tool-result">Result: {{ m.toolCall.result }}</div>
+                }
+              </div>
+            }
+
+            <div class="bubble-content" [innerHTML]="formatMd(m.content)"></div>
+          </div>
+        }
+      }
+    </div>
+
+    <div class="chat-input-bar">
+      <input
+        type="text"
+        class="agent-input"
+        placeholder="Type your message or prompt to local OSS-Agent..."
+        [value]="typedPrompt()"
+        readonly
+      />
+      <button class="agent-btn" disabled>
+        {{ isRunning() ? 'Benchmarking...' : 'Benchmark Complete' }}
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,287 @@
+{
+  "config": {
+    "mode": "build",
+    "runs": 1,
+    "suite": "OSS-Agent Frontend Framework Benchmark"
+  },
+  "system": {
+    "device": "Dell Inc. Inspiron 14 7445 2-in-1",
+    "isLaptop": true,
+    "os": "Microsoft Windows 11 Pro (x64)",
+    "cpu": "AMD Ryzen 5 8640HS w/ Radeon 760M Graphics",
+    "npu": "NPU Compute Accelerator Device",
+    "gpu": "AMD Radeon 760M Graphics",
+    "cores": "6 Cores / 12 Threads",
+    "ram": "15 GB RAM",
+    "battery": "Battery Present (24%)",
+    "browser": "Chromium (Headless / WebGPU + WebNN NPU)",
+    "node": "v26.3.0"
+  },
+  "results": {
+    "vanilla": {
+      "Model & Runtime Init": 27.8,
+      "First Token Latency (TTFT)": 2.4,
+      "Token Streaming & Render (TPS)": 7.1,
+      "Tool-Calling Execution": 5.8,
+      "Render Large Conversation": 8.4,
+      "Agent State Updates": 7.6,
+      "IndexedDB Storage I/O": 12,
+      "UI Response Under Inference": 7.9,
+      "Cancellation & Teardown": 7.8,
+      "Clear Session & Cleanup": 16.2
+    },
+    "solid": {
+      "Model & Runtime Init": 14.8,
+      "First Token Latency (TTFT)": 0.9,
+      "Token Streaming & Render (TPS)": 1,
+      "Tool-Calling Execution": 0.8,
+      "Render Large Conversation": 4,
+      "Agent State Updates": 0.3,
+      "IndexedDB Storage I/O": 6,
+      "UI Response Under Inference": 0.4,
+      "Cancellation & Teardown": 0.5,
+      "Clear Session & Cleanup": 2
+    },
+    "inferno": {
+      "Model & Runtime Init": 13,
+      "First Token Latency (TTFT)": 0.7,
+      "Token Streaming & Render (TPS)": 0.8,
+      "Tool-Calling Execution": 0.9,
+      "Render Large Conversation": 2.4,
+      "Agent State Updates": 1,
+      "IndexedDB Storage I/O": 6.2,
+      "UI Response Under Inference": 0.6,
+      "Cancellation & Teardown": 0.7,
+      "Clear Session & Cleanup": 1.9
+    },
+    "preact": {
+      "Model & Runtime Init": 15,
+      "First Token Latency (TTFT)": 2.6,
+      "Token Streaming & Render (TPS)": 8.3,
+      "Tool-Calling Execution": 6.4,
+      "Render Large Conversation": 11.6,
+      "Agent State Updates": 1.9,
+      "IndexedDB Storage I/O": 6.5,
+      "UI Response Under Inference": 2.3,
+      "Cancellation & Teardown": 2.5,
+      "Clear Session & Cleanup": 15.8
+    },
+    "mithril": {
+      "Model & Runtime Init": 12.1,
+      "First Token Latency (TTFT)": 0.2,
+      "Token Streaming & Render (TPS)": 0.2,
+      "Tool-Calling Execution": 0.1,
+      "Render Large Conversation": 0.3,
+      "Agent State Updates": 0.2,
+      "IndexedDB Storage I/O": 5.4,
+      "UI Response Under Inference": 0.2,
+      "Cancellation & Teardown": 0.3
+    },
+    "lit": {
+      "Model & Runtime Init": 13.9,
+      "First Token Latency (TTFT)": 0.8,
+      "Token Streaming & Render (TPS)": 0.7,
+      "Tool-Calling Execution": 0.9,
+      "Render Large Conversation": 3,
+      "Agent State Updates": 0.7,
+      "IndexedDB Storage I/O": 5.8,
+      "UI Response Under Inference": 0.7,
+      "Cancellation & Teardown": 0.8,
+      "Clear Session & Cleanup": 1.5
+    },
+    "svelte": {
+      "Model & Runtime Init": 12.5,
+      "First Token Latency (TTFT)": 1.3,
+      "Token Streaming & Render (TPS)": 0.9,
+      "Tool-Calling Execution": 1.1,
+      "Render Large Conversation": 3.8,
+      "Agent State Updates": 0.4,
+      "IndexedDB Storage I/O": 5.2,
+      "UI Response Under Inference": 0.7,
+      "Cancellation & Teardown": 0.7,
+      "Clear Session & Cleanup": 2.4
+    },
+    "vue": {
+      "Model & Runtime Init": 12.4,
+      "First Token Latency (TTFT)": 0.5,
+      "Token Streaming & Render (TPS)": 0.3,
+      "Tool-Calling Execution": 0.5,
+      "Render Large Conversation": 0.3,
+      "Agent State Updates": 0.3,
+      "IndexedDB Storage I/O": 5.7,
+      "UI Response Under Inference": 0.4,
+      "Cancellation & Teardown": 0.3,
+      "Clear Session & Cleanup": 0.3
+    },
+    "react": {
+      "Model & Runtime Init": 16.4,
+      "First Token Latency (TTFT)": 2.5,
+      "Token Streaming & Render (TPS)": 8.7,
+      "Tool-Calling Execution": 7.1,
+      "Render Large Conversation": 12,
+      "Agent State Updates": 6.4,
+      "IndexedDB Storage I/O": 12.7,
+      "UI Response Under Inference": 7.5,
+      "Cancellation & Teardown": 6,
+      "Clear Session & Cleanup": 15.9
+    },
+    "angular": {
+      "Model & Runtime Init": 12.5,
+      "First Token Latency (TTFT)": 1.1,
+      "Token Streaming & Render (TPS)": 1.9,
+      "Tool-Calling Execution": 1.4,
+      "Render Large Conversation": 6.8,
+      "Agent State Updates": 1,
+      "IndexedDB Storage I/O": 5.8,
+      "UI Response Under Inference": 1.2,
+      "Cancellation & Teardown": 1.1,
+      "Clear Session & Cleanup": 2.4
+    },
+    "qwik": {
+      "Model & Runtime Init": 34.4,
+      "First Token Latency (TTFT)": 1.1,
+      "Token Streaming & Render (TPS)": 0.8,
+      "Tool-Calling Execution": 1,
+      "Render Large Conversation": 11.3,
+      "Agent State Updates": 9.8,
+      "IndexedDB Storage I/O": 7.9,
+      "UI Response Under Inference": 2.8,
+      "Cancellation & Teardown": 1.2,
+      "Clear Session & Cleanup": 6.4
+    }
+  },
+  "metrics": {
+    "vanilla": {
+      "startupMs": 67.7,
+      "initialMemoryMB": 1.36,
+      "peakMemoryMB": 2.72,
+      "retainedMemoryMB": 2.33,
+      "bundle": {
+        "jsKb": 17.39,
+        "gzipKb": 7.12,
+        "cssKb": 4.92,
+        "wasmKb": 53880.67
+      }
+    },
+    "solid": {
+      "startupMs": 30.2,
+      "initialMemoryMB": 1.48,
+      "peakMemoryMB": 2.73,
+      "retainedMemoryMB": 2.61,
+      "bundle": {
+        "jsKb": 26.4,
+        "gzipKb": 10.97,
+        "cssKb": 4.92,
+        "wasmKb": 53880.67
+      }
+    },
+    "preact": {
+      "startupMs": 30.9,
+      "initialMemoryMB": 1.52,
+      "peakMemoryMB": 3.11,
+      "retainedMemoryMB": 3.11,
+      "bundle": {
+        "jsKb": 29.96,
+        "gzipKb": 12.42,
+        "cssKb": 4.92,
+        "wasmKb": 53880.67
+      }
+    },
+    "inferno": {
+      "startupMs": 33.3,
+      "initialMemoryMB": 1.51,
+      "peakMemoryMB": 3,
+      "retainedMemoryMB": 3,
+      "bundle": {
+        "jsKb": 42.02,
+        "gzipKb": 15.66,
+        "cssKb": 4.92,
+        "wasmKb": 53880.67
+      }
+    },
+    "mithril": {
+      "startupMs": 33.4,
+      "initialMemoryMB": 1.54,
+      "peakMemoryMB": 3.02,
+      "retainedMemoryMB": 3.02,
+      "bundle": {
+        "jsKb": 41.73,
+        "gzipKb": 16.72,
+        "cssKb": 4.92,
+        "wasmKb": 53880.67
+      }
+    },
+    "lit": {
+      "startupMs": 35.8,
+      "initialMemoryMB": 1.58,
+      "peakMemoryMB": 2.9,
+      "retainedMemoryMB": 2.68,
+      "bundle": {
+        "jsKb": 35.91,
+        "gzipKb": 13.44,
+        "cssKb": 4.92,
+        "wasmKb": 53880.67
+      }
+    },
+    "vue": {
+      "startupMs": 50.7,
+      "initialMemoryMB": 1.78,
+      "peakMemoryMB": 3.5,
+      "retainedMemoryMB": 4.03,
+      "bundle": {
+        "jsKb": 75.53,
+        "gzipKb": 29.97,
+        "cssKb": 4.92,
+        "wasmKb": 53880.67
+      }
+    },
+    "svelte": {
+      "startupMs": 39.8,
+      "initialMemoryMB": 1.42,
+      "peakMemoryMB": 3.48,
+      "retainedMemoryMB": 4,
+      "bundle": {
+        "jsKb": 90.56,
+        "gzipKb": 36.5,
+        "cssKb": 4.92,
+        "wasmKb": 53880.67
+      }
+    },
+    "qwik": {
+      "startupMs": 33.4,
+      "initialMemoryMB": 1.33,
+      "peakMemoryMB": 4.08,
+      "retainedMemoryMB": 4.6,
+      "bundle": {
+        "jsKb": 99.46,
+        "gzipKb": 44.67,
+        "cssKb": 4.92,
+        "wasmKb": 53880.67
+      }
+    },
+    "react": {
+      "startupMs": 132.9,
+      "initialMemoryMB": 2.16,
+      "peakMemoryMB": 3.86,
+      "retainedMemoryMB": 4.48,
+      "bundle": {
+        "jsKb": 202.73,
+        "gzipKb": 65.06,
+        "cssKb": 4.92,
+        "wasmKb": 53880.67
+      }
+    },
+    "angular": {
+      "startupMs": 52.9,
+      "initialMemoryMB": 2.85,
+      "peakMemoryMB": 4.71,
+      "retainedMemoryMB": 4.71,
+      "bundle": {
+        "jsKb": 1197.66,
+        "gzipKb": 351.43,
+        "cssKb": 4.92,
+        "wasmKb": 0
+      }
+    }
+  }
+}

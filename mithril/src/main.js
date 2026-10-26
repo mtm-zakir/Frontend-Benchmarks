@@ -139,9 +139,9 @@ function scheduleNext() {
       agentState = clearRes.state;
       typedPrompt = "";
       step = 11;
+      recordResult();
       results = [...resultsBuffer];
       m.redraw();
-      recordResult();
     }
   }, 250);
 }
